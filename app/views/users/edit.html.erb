@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> TOP: Forms Project</title>
+  </head>
+  <body>
+
+    <%= form_for @user do |f| %>
+      <%= f.label :email %>:
+      <%= f.text_field :email %><br />
+    
+      <%= f.label :username %>:
+      <%= f.text_field :username %><br />
+
+      <%= f.label :password %>:
+      <%= f.password_field :username %><br />
+
+    
+      <%= f.submit %>
+    <% end %>
+
+  </body>
+</html>
